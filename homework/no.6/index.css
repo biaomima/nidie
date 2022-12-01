@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Consolas;
+}
+
+:root {
+    --font-color: red;
+    --window-color: white;
+}
+
+html, body, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--window-color);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+html, body {
+    flex-direction: column;
+    background-color: black;
+}
+
+#windowTime {
+    height: 80%;
+    font-size: 20vw;
+}
+
+#tool, #timer, #windowDate, #countDown {
+    font-size: 3.5vw;
+}
+
+#tool {
+    height: 20%; 
+    flex-shrink: 1 1 auto;
+    border-top: 1px dashed lime;
+}
+
+#timer {
+    width: 33%;
+    border-right: 1px dashed lime;
+}
+
+#windowDate {
+    width: 34%;
+    font-weight: bold;
+}
+
+#windowDate:hover {
+    color: var(--font-color) !important;
+}
+
+#countDown {
+    width: 33%;
+    border-left: 1px dashed lime;
+}
+
+#timer:hover, #countDown:hover {
+    color: aqua !important;
+}
