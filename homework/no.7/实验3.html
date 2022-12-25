@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #box1 {
+            border: 2px solid;
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+        
+        #box2 {
+            border: 2px dashed;
+            width: 740px;
+            height: 340px;
+            margin: 30px;
+            border-radius: 10px;
+        }
+        
+        #box3 {
+            border: 2px solid;
+            width: 680px;
+            height: 280px;
+            margin: 30px;
+            border-radius: 10px;
+        }
+        
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        #box4 {
+            margin: 200px 0px 0px 336px;
+            width: 70px;
+            height: 80px;
+            position: absolute;
+            animation: mycar 5s;
+            -webkit-animation: mycar 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-play-state: running;
+        }
+        
+        @keyframes mycar {
+            0% {
+                left: 13px;
+                top: 100px;
+            }
+            20% {
+                left: 13px;
+                top: 245px;
+            }
+            40% {
+                left: 753px;
+                top: 245px;
+            }
+            60% {
+                left: 750px;
+                top: -100px;
+            }
+            80% {
+                left: 13px;
+                top: -100px;
+            }
+            100% {
+                left: 13px;
+                top: 100px;
+            }
+        }
+        
+        @-webkit-keyframes mycar {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        #box4:hover {
+            animation-play-state: paused;
+            -webkit-animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box4"><img src="https://docimg1.docs.qq.com/image/AgAABS7DEZfdVAKq4qNEM5nZhdo0YyS3.png?w=200&h=200"></div>
+    <div id="box1">
+
+        <div id="box2">
+            <div id="box3">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
